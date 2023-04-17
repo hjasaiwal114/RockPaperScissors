@@ -19,3 +19,8 @@ function getComputerChoice() {
     const randomIndex = Math.floor(math.random()*choices.lenght);
     return choices[randomIndex];
 }
+// ** getResult compares playerChoice & computerChoice and returns the score accordingly **
+// human wins - getResult('Rock', 'Scissors') 👉 1
+// human loses - getResult('Scissors', 'Rock') 👉 -1
+// human draws - getResult('Rock', 'Rock') 👉 0
+
