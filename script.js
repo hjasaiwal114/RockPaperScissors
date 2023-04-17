@@ -24,3 +24,17 @@ function getComputerChoice() {
 // human loses - getResult('Scissors', 'Rock') 👉 -1
 // human draws - getResult('Rock', 'Rock') 👉 0
 
+function getResult(playerChoice,  computerChoice) {
+    // return the result of score based in if you won, dew, or lost
+    let score:
+    if (playerChoice === 'rock' && computerChoice === 'scissors') {
+        score = 0;
+    } else if (playerChoice === 'scissors' && comouterChoice === 'paper') {
+        score = 1;
+    }else if (playerChoice === 'paper' && computerChoice === 'rock'){
+        score = 1;
+    } else {
+        score -= 1;
+    }
+    return score;
+}
