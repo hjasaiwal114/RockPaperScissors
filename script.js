@@ -99,3 +99,6 @@ function playGame() {
   let endgameButton = document.getElementById('endGameButton')
   endGameButton.onclick = () => endGame()
 }
+
+// ** endGame function clears all the text on the DOM **
+
