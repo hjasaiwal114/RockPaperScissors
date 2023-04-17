@@ -102,3 +102,14 @@ function playGame() {
 
 // ** endGame function clears all the text on the DOM **
 
+function endGame() {
+    let playerScore = document.getElementById('player-score')
+    let hands = document.getElementById('hands')
+    let result = document.getElementById('result')
+    playerScore.innerText = ''
+    hands.innerText = ''
+    result.innerText = ''
+
+}
+
+playGame()
