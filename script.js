@@ -76,3 +76,13 @@ function getComputerChoice() {
   }
 
 // ** Calculate who won and show it on the screen **
+function onClickRPS(playerChoice) {
+    const computerChoice = getComputerChoice()
+    const score = getResult(playerChoice.value, computerChoice)
+    showResult(score, playerChoice.value, computerChoice)
+}
+
+// ** Make the RPS buttons actively listen for a click and do something once a click is detected **
+function playGame() {
+    // 
+}
