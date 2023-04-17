@@ -38,3 +38,17 @@ function getResult(playerChoice,  computerChoice) {
     }
     return score;
 }
+  // All situations where human draws, set `score` to 0
+  
+
+  // All situations where human wins, set `score` to 1
+  // make sure to use else ifs here
+  
+
+  // Otherwise human loses (aka set score to -1)
+  
+
+  // return score
+  // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
+
+  
