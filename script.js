@@ -84,5 +84,18 @@ function onClickRPS(playerChoice) {
 
 // ** Make the RPS buttons actively listen for a click and do something once a click is detected **
 function playGame() {
-    // 
+    // use querySelector to select all RPS Buttons
+    let rpsButtons = document.querySelectorAll('.rpsButton')
+    // * Adds an on click event listener to each RPS button and every time you click it, it calls the onClickRPS function with the RPS button that was last clicked *
+  
+  // 1. loop through the buttons using a forEach loop
+  // 2. Add a 'click' event listener to each button
+  // 3. Call the onClickRPS function every time someone clicks
+  // 4. Make sure to pass the currently selected rps button as an argument
+  rpsButtons.forEach(rpsButton => {
+    rpsButton.onclick = () => onClickRPS(rpsButton)
+  })
+  // Add a click listener to the end game button that runs the endGame() function on click
+  let endgameButton = document.getElementById('endGameButton')
+  endGameButton.onclick = () => endGame()
 }
