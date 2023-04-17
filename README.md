@@ -29,6 +29,7 @@ Rock Paper Scissors Game
 
 6.Play as many rounds as you like and have fun!
 
+![ezgif-2-9c63bd19eb](https://user-images.githubusercontent.com/68457116/232523656-ef9769b1-6768-49a0-a704-993321d3a072.gif)
 
 ## Technologies Used
 .HTML
