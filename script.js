@@ -51,3 +51,28 @@ function getComputerChoice() {
     return score
   }
   
+  // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
+
+  function showResult(score, playerChoice, computerChoice) {
+  // Hint: on a score of -1
+  // You should do result.innerText = 'You Lose!'
+  // Don't forget to grab the div with the 'result' id!
+        let result  = document.getElementById('result')
+        switch (score) {
+            case -1:
+                result.inneText = 'You Lose!'
+                break;
+            case 0:
+                result.innerText = 'You Win!'
+                break;
+            case 1:
+                result.innerText = 'You Win!'
+                break;
+        }
+        let payerScore = document.getElementById('player-score')
+        let hands = document.getElementById('hands')
+        playerScore.innerText = `${Number(playerScore.innerText) + score}`
+            hands.innerText = `👱 ${playerChoice} vs 🤖 ${computerChoice}`
+  }
+
+// ** Calculate who won and show it on the screen **
